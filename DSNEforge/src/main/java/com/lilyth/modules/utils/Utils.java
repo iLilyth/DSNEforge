@@ -10,7 +10,7 @@ public class Utils {
     public boolean isOnDragsim() {
         Minecraft mc = Minecraft.getMinecraft();
         EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;;
-        if (player == null) {
+        if (mc.isSingleplayer()) {
             return false;
         } else {
             return mc.getCurrentServerData().serverIP.contains("dragsim.net");

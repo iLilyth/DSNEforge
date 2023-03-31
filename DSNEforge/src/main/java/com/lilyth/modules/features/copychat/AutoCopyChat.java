@@ -13,7 +13,6 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
 public class AutoCopyChat {
-    private static final DSNEforge main = DSNEforge.getInstance();
     private final Config config = DSNEforge.getConfig();
     int[] playSoundPitch = {1, 2, 3, 5, 8, 13};
     public void autoCopyChat(ClientChatReceivedEvent e) {

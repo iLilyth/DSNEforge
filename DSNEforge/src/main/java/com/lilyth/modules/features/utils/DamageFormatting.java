@@ -1,7 +1,6 @@
 package com.lilyth.modules.features.utils;
 
 import com.lilyth.DSNEforge;
-import com.lilyth.config.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -12,19 +11,12 @@ import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityArmorStand;
-import net.minecraft.util.ChatComponentText;
 import net.minecraftforge.client.event.RenderLivingEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.lwjgl.opengl.GL11;
-
-import java.lang.reflect.Array;
 
 public class DamageFormatting {
     private static final DSNEforge main = DSNEforge.getInstance();
-    private final Config config = DSNEforge.getConfig();
-    String target[] = {"✰", "§0", "§1", "§2", "§3", "§4", "§5", "§6", "§7", "§8", "§9", "§a", "§b", "§c", "§d", "§e", "§f"};
+    String[] target = {"✰", "§0", "§1", "§2", "§3", "§4", "§5", "§6", "§7", "§8", "§9", "§a", "§b", "§c", "§d", "§e", "§f"};
 
     public void damageFormatter(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
         Minecraft mc = Minecraft.getMinecraft();

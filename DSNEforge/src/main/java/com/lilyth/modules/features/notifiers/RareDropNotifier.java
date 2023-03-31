@@ -7,7 +7,7 @@ import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.client.event.RenderLivingEvent;
 
 public class RareDropNotifier {
-    String target[] = {"Booster Bread", "Shadow Assassin", "Eagle Wing", "Dragon Wing", "Necron's", "Giant's Sword", "Infernal Crimson", "Warden Helmet", "Terminator", "Divine Alloy", "Book of Seidr", "Platinum Egg", "Hyperion", "Scylla", "@)$&#^ #*$(@)", "Sorrow", "Divine Handle", "Golden String", "Celestium"};
+    String[] target = {"Booster Bread", "Shadow Assassin", "Eagle Wing", "Dragon Wing", "Necron's", "Giant's Sword", "Infernal Crimson", "Warden Helmet", "Terminator", "Divine Alloy", "Book of Seidr", "Platinum Egg", "Hyperion", "Scylla", "@)$&#^ #*$(@)", "Sorrow", "Divine Handle", "Golden String", "Celestium"};
 
     public void rareDropNotifier(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
         Minecraft mc = Minecraft.getMinecraft();
@@ -28,7 +28,6 @@ public class RareDropNotifier {
     }
     public boolean dragonDownlol;
     public void dragonDown(ClientChatReceivedEvent event) {
-        Minecraft mc = Minecraft.getMinecraft();
         String msg = event.message.getUnformattedText();
         if(msg.startsWith("Dragon down!")){
             dragonDownlol = true;

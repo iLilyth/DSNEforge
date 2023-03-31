@@ -7,15 +7,12 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-import java.awt.*;
 import java.io.*;
 
 public class EyesDropped {
-    private static final DSNEforge main = DSNEforge.getInstance();
     private final Config config = DSNEforge.getConfig();
     public String eyeCount1(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/SummoningEyes.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -28,7 +25,6 @@ public class EyesDropped {
     }
     public String eyeCount2(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/IceEyes.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -41,7 +37,6 @@ public class EyesDropped {
     }
     public String eyeCount3(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/CosmicEyes.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -54,7 +49,6 @@ public class EyesDropped {
     }
     public String eyeCount4(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/RadioactiveEyes.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -67,7 +61,6 @@ public class EyesDropped {
     }
     public String eyeCount5(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/FlamingEyes.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -80,7 +73,6 @@ public class EyesDropped {
     }
     public String eyeCount6(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/DivineEyes.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -93,7 +85,6 @@ public class EyesDropped {
     }
     public String eyeCount7(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/DivineAmeliorate.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -106,7 +97,6 @@ public class EyesDropped {
     }
     public String eyeCount8(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/EyesPlaced.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -119,7 +109,6 @@ public class EyesDropped {
     }
     public String eyeCount9(){
         String asd = "";
-        Minecraft mc = Minecraft.getMinecraft();
         try {
             FileReader fileReader = new FileReader("./config/DSNEforge/DivinesPlaced.txt");
             BufferedReader reader = new BufferedReader(fileReader);
@@ -130,9 +119,7 @@ public class EyesDropped {
         }
         return asd;
     }
-
     public void addEye(ClientChatReceivedEvent e){
-        int summoningEyeCount = 0;
         Minecraft mc = Minecraft.getMinecraft();
         String text = e.message.getUnformattedText();
         if(text.startsWith("RARE DROP! Summoning Eye")){
@@ -231,7 +218,7 @@ public class EyesDropped {
                 mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
             }
         }
-        if(text.startsWith("RNGesus INCARNATE! Divine Ameliorate")){
+        if(text.startsWith("INSANE DROP! Divine Ameliorate")){
             try{
                 FileReader fileReader = new FileReader("./config/DSNEforge/DivineAmeliorate.txt");
                 BufferedReader reader = new BufferedReader(fileReader);

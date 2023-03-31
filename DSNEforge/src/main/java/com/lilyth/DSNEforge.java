@@ -7,6 +7,7 @@ import com.lilyth.modules.features.hud.ToggleSprint;
 import com.lilyth.modules.features.notifiers.RareDropNotifier;
 import com.lilyth.modules.features.random.DragonSpawn;
 import com.lilyth.modules.features.utils.DamageFormatting;
+import com.lilyth.modules.features.utils.EndermanWaypoints;
 import com.lilyth.modules.listeners.PlayerListener;
 import com.lilyth.modules.features.copychat.CopyChat;
 import com.lilyth.modules.features.hud.FPScounter;
@@ -47,10 +48,11 @@ public class DSNEforge {
     public final PingCounter pingCounter;
     public final ToggleSprint toggleSprint;
     public final DivineSuperior divineSuperior;
-    public RareDropNotifier rareDropNotifier;
+    public final RareDropNotifier rareDropNotifier;
     public final DragonSpawn dragonSpawn;
     public final PingPong pingPong;
     public final DamageFormatting damageFormatting;
+    public final EndermanWaypoints endermanWaypoints;
     public final PlayerListener playerListener;
     public final RenderListener renderListener;
     public final EyesDropped eyesDropped;
@@ -72,6 +74,7 @@ public class DSNEforge {
         this.dragonSpawn = new DragonSpawn();
         this.pingPong = new PingPong();
         this.damageFormatting = new DamageFormatting();
+        this.endermanWaypoints = new EndermanWaypoints();
         this.eyesDropped = new EyesDropped();
         this.firstLoad = new FirstLoad();
         this.inventoryUtils = new InventoryUtils();
@@ -140,7 +143,9 @@ public class DSNEforge {
     public DamageFormatting getDamageFormatting() {
         return damageFormatting;
     }
-
+    public EndermanWaypoints getEndermanWaypoints() {
+        return endermanWaypoints;
+    }
     public PlayerListener getPlayerListener() {
         return playerListener;
     }

@@ -7,7 +7,6 @@ import gg.essential.api.commands.Command;
 import gg.essential.api.commands.DefaultHandler;
 
 public class ExampleCommand extends Command {
-    private static final DSNEforge main = DSNEforge.getInstance();
     private final Config config = DSNEforge.getConfig();
     public ExampleCommand(String name) {
         super(name);

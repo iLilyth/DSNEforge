@@ -11,18 +11,27 @@ public class ToggleSprint {
     public static final DSNEforge main = DSNEforge.getInstance();
     public final Config config = DSNEforge.getConfig();
     public boolean isToggled = false;
+    public int cooldown;
     public KeyBinding toggleKey = Minecraft.getMinecraft().gameSettings.keyBindSprint;
 
-    public void autoSprint(TickEvent.ClientTickEvent e){
+    public void autoSprint(TickEvent.ClientTickEvent event){
         Minecraft mc = Minecraft.getMinecraft();
-        if (toggleKey.isKeyDown()) {
-            isToggled = !isToggled;
+        if(cooldown!=0){
+            cooldown = cooldown - 1;
+        }
+        if(cooldown==0){
+            if (toggleKey.isKeyDown()) {
+                isToggled = !isToggled;
+                cooldown = 20;
+            }
         }
         if (isToggled && mc.thePlayer.moveForward > 0) {
-            mc.thePlayer.setSprinting(true);
+            if(!mc.thePlayer.isSneaking()){
+                mc.thePlayer.setSprinting(true);
+            }
         }
     }
-    public void autoSprintGUI(TickEvent.RenderTickEvent e){
+    public void autoSprintGUI(TickEvent.RenderTickEvent event){
         Minecraft mc = Minecraft.getMinecraft();
         if(mc.thePlayer == null || mc.theWorld == null || !isToggled) return;
         mc.fontRendererObj.drawStringWithShadow("Autosprint: enabled", ((float)mc.displayWidth / 200) * config.AUTOSPRINT_X, ((float)mc.displayHeight / 200) * config.AUTOSPRINT_Y, 0xFFFFFF);

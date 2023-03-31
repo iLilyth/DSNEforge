@@ -11,6 +11,6 @@ public class FPScounter {
     public void fpsCounterGUI(TickEvent.RenderTickEvent event){
         Minecraft mc = Minecraft.getMinecraft();
         if(mc.thePlayer == null || mc.theWorld == null) return;
-        mc.fontRendererObj.drawStringWithShadow(String.valueOf(Minecraft.getDebugFPS()), ((float)mc.displayWidth / 200) * config.FPS_COUNTER_X, ((float)mc.displayHeight / 200) * config.FPS_COUNTER_Y, 0xFFFFFF);
+        mc.fontRendererObj.drawStringWithShadow("FPS: " + String.valueOf(Minecraft.getDebugFPS()), ((float)mc.displayWidth / 200) * config.FPS_COUNTER_X, ((float)mc.displayHeight / 200) * config.FPS_COUNTER_Y, 0xFFFFFF);
     }
 }

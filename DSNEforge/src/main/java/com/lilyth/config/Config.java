@@ -196,6 +196,15 @@ public class Config extends Vigilant {
     public boolean FULLBRIGHT = true;
 
     @Property(
+            type = PropertyType.CHECKBOX,
+            name = "Enderman Waypoints",
+            description = "",
+            category = "!Visual",
+            subcategory = "Enderman Waypoints"
+    )
+    public boolean ENDERMAN_WAYPOINTS = true;
+
+    @Property(
             type = PropertyType.SLIDER,
             name = "Autosprint X",
             description = "",

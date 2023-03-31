@@ -7,13 +7,9 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import java.awt.*;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class PingPong {
     private static final DSNEforge main = DSNEforge.getInstance();
-    private final Config config = DSNEforge.getConfig();
     @SubscribeEvent
     public void pingPong(ClientChatReceivedEvent event){
         Minecraft mc = Minecraft.getMinecraft();
