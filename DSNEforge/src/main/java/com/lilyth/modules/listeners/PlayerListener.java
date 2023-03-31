@@ -76,7 +76,7 @@ public class PlayerListener {
     }
 
     @SubscribeEvent
-    public void onChatMessageRecieved(ClientChatReceivedEvent event){
+    public void onChatMessageReceived(ClientChatReceivedEvent event){
         Minecraft mc = Minecraft.getMinecraft();
         EntityPlayerSP p = mc.thePlayer;
         if(mc.thePlayer == null || mc.theWorld == null) return;
