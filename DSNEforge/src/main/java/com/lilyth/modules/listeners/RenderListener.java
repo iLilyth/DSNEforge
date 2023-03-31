@@ -4,6 +4,8 @@ import com.lilyth.DSNEforge;
 import com.lilyth.config.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
@@ -16,7 +18,7 @@ public class RenderListener {
         Minecraft mc = Minecraft.getMinecraft();
         if(mc.thePlayer == null || mc.theWorld == null) return;
         if(main.getUtils().isOnDragsim() && main.getPlayerListener().HasNotRecentlyJoinedWorld()){
-            if(mc.thePlayer.openContainer == null){
+            if(!guiOpen){
                 main.getToggleSprint().autoSprintGUI(event);
                 if(config.FPS_COUNTER){
                     main.getFpscounter().fpsCounterGUI(event);
@@ -32,6 +34,12 @@ public class RenderListener {
             }
         }
     }
+    public boolean guiOpen;
+    @SubscribeEvent
+    public void onGuiOpened(GuiOpenEvent event){
+        guiOpen = event.gui != null;
+    }
+
     @SubscribeEvent
     public void renderEntity(RenderLivingEvent.Specials.Pre<EntityLivingBase> event) {
         Minecraft mc = Minecraft.getMinecraft();
