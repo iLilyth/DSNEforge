@@ -23,27 +23,32 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if(dragonDownlol1){
-            if (entity.getName().contains("§k")) {
-                for (String s : target1) {
-                    if (entity.getName().contains(s)) {
-                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+            if(entity.hasCustomName()){
+                if (entity.getName().contains("§k")) {
+                    for (int i = 0; i < target1.length; i++) {
+                        if (entity.getName().contains(target1[i])) {
+                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+                        }
                     }
+                    dragonDownlol1 = false;
                 }
-                dragonDownlol1 = false;
             }
+
         }
     }
     public void rareDropNotifier2(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if(dragonDownlol2){
-            if (entity.getName().contains("§k")) {
-                for (String s : target2) {
-                    if (entity.getName().contains(s)) {
-                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+            if(entity.hasCustomName()){
+                if (entity.getName().contains("§k")) {
+                    for (int i = 0; i < target2.length; i++) {
+                        if (entity.getName().contains(target2[i])) {
+                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+                        }
                     }
+                    dragonDownlol2 = false;
                 }
-                dragonDownlol2 = false;
             }
         }
     }
@@ -51,13 +56,15 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if (dragonDownlol3) {
-            if (entity.getName().contains("§k")) {
-                for (String s : target3) {
-                    if (entity.getName().contains(s)) {
-                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+            if(entity.hasCustomName()){
+                if (entity.getName().contains("§k")) {
+                    for (int i = 0; i < target3.length; i++) {
+                        if (entity.getName().contains(target3[i])) {
+                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+                        }
                     }
+                    this.dragonDownlol3 = false;
                 }
-                dragonDownlol3 = false;
             }
         }
     }
@@ -65,25 +72,25 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if (dragonDownlol4) {
-            if (entity.getName().contains("§k")) {
-                for (String s : target4) {
-                    if (entity.getName().contains(s)) {
-                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
-
+            if(entity.hasCustomName()){
+                if (entity.getName().contains("§k")) {
+                    for (int i = 0; i < target4.length; i++) {
+                        if (entity.getName().contains(target4[i])) {
+                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+                        }
                     }
+                    this.dragonDownlol4 = false;
                 }
-                dragonDownlol4 = false;
             }
         }
     }
     public void dragonDown(ClientChatReceivedEvent event) {
         String msg = event.message.getUnformattedText();
         if(msg.startsWith("Dragon down!")){
-            dragonDownlol1 = true;
-            dragonDownlol2 = true;
-            dragonDownlol3 = true;
-            dragonDownlol4 = true;
-
+            this.dragonDownlol1 = true;
+            this.dragonDownlol2 = true;
+            this.dragonDownlol3 = true;
+            this.dragonDownlol4 = true;
         }
     }
 }
