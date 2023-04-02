@@ -23,7 +23,6 @@ buildscript {
 
 apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: "com.github.johnrengelman.shadow"
-
 version = "1.1.0"
 group = "com.ililyth" //http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "dsneforge" //name of the output jar
@@ -65,7 +64,7 @@ dependencies {
     embed "gg.essential:loader-launchwrapper:1.1.3"
     compileOnly "gg.essential:essential-1.8.9-forge:12174+g776a77319"
     compileOnly "gg.essential:vigilance-1.8.9-forge:195"
-
+    embed 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 
 jar {
