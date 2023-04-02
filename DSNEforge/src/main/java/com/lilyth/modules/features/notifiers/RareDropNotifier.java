@@ -23,15 +23,13 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if(dragonDownlol1){
-            if(entity instanceof EntityArmorStand){
-                if (entity.getName().contains("§k")) {
-                    for (String s : target1) {
-                        if (entity.getName().contains(s)) {
-                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
-                        }
+            if (entity.getName().contains("§k")) {
+                for (String s : target1) {
+                    if (entity.getName().contains(s)) {
+                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
                     }
-                    dragonDownlol1 = false;
                 }
+                dragonDownlol1 = false;
             }
         }
     }
@@ -39,15 +37,13 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if(dragonDownlol2){
-            if(entity instanceof EntityArmorStand){
-                if (entity.getName().contains("§k")) {
-                    for (String s : target2) {
-                        if (entity.getName().contains(s)) {
-                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
-                        }
+            if (entity.getName().contains("§k")) {
+                for (String s : target2) {
+                    if (entity.getName().contains(s)) {
+                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
                     }
-                    dragonDownlol2 = false;
                 }
+                dragonDownlol2 = false;
             }
         }
     }
@@ -55,15 +51,13 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if (dragonDownlol3) {
-            if (entity instanceof EntityArmorStand) {
-                if (entity.getName().contains("§k")) {
-                    for (String s : target3) {
-                        if (entity.getName().contains(s)) {
-                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
-                        }
+            if (entity.getName().contains("§k")) {
+                for (String s : target3) {
+                    if (entity.getName().contains(s)) {
+                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
                     }
-                    dragonDownlol3 = false;
                 }
+                dragonDownlol3 = false;
             }
         }
     }
@@ -71,16 +65,14 @@ public class RareDropNotifier {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if (dragonDownlol4) {
-            if (entity instanceof EntityArmorStand) {
-                if (entity.getName().contains("§k")) {
-                    for (String s : target4) {
-                        if (entity.getName().contains(s)) {
-                            mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
+            if (entity.getName().contains("§k")) {
+                for (String s : target4) {
+                    if (entity.getName().contains(s)) {
+                        mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
 
-                        }
                     }
-                    dragonDownlol4 = false;
                 }
+                dragonDownlol4 = false;
             }
         }
     }
