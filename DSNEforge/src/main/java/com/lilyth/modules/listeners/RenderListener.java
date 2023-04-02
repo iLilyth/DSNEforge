@@ -4,7 +4,6 @@ import com.lilyth.DSNEforge;
 import com.lilyth.config.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -48,7 +47,10 @@ public class RenderListener {
             main.getDamageFormatting().damageFormatter(event);
         }
         if (config.RARE_DROPS) {
-            main.getRareDropNotifier().rareDropNotifier(event);
+            main.getRareDropNotifier().rareDropNotifier1(event);
+            main.getRareDropNotifier().rareDropNotifier2(event);
+            main.getRareDropNotifier().rareDropNotifier3(event);
+            main.getRareDropNotifier().rareDropNotifier4(event);
         }
         if (config.ENDERMAN_WAYPOINTS) {
             main.getEndermanWaypoints().endermanWaypoints(event);

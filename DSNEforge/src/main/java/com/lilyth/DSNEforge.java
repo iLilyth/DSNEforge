@@ -18,7 +18,6 @@ import com.lilyth.modules.trackers.EyesDropped;
 import com.lilyth.modules.trackers.FirstLoad;
 import com.lilyth.modules.utils.InventoryUtils;
 import com.lilyth.modules.features.random.PingPong;
-import com.lilyth.modules.utils.JSON;
 import com.lilyth.modules.utils.NumberFormatter;
 import com.lilyth.modules.utils.Utils;
 import net.minecraftforge.common.MinecraftForge;
@@ -93,7 +92,7 @@ public class DSNEforge {
     public void init(FMLInitializationEvent event) {
         // Initialize and preload modules
         config.preload();
-        JSON.loadEyes();
+        //JSON.loadEyes();
         new ExampleCommand("dsnf").register();
         MinecraftForge.EVENT_BUS.register(this.playerListener);
         MinecraftForge.EVENT_BUS.register(this.renderListener);

@@ -1,7 +1,5 @@
 package com.lilyth.modules.utils;
 
-import com.lilyth.DSNEforge;
-import com.lilyth.config.Config;
 import gg.essential.universal.ChatColor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -9,8 +7,6 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
 public class InventoryUtils {
-    private static final DSNEforge main = DSNEforge.getInstance();
-    private final Config config = DSNEforge.getConfig();
     private int cooldown;
     public void showFullInventoryWarning() {
         Minecraft mc = Minecraft.getMinecraft();

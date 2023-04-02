@@ -1,7 +1,6 @@
 package com.lilyth.modules.features.random;
 
 import com.lilyth.DSNEforge;
-import com.lilyth.config.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;

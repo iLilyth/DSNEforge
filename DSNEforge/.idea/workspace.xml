@@ -11,11 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0680044-cc56-415e-87a8-a8950c47ab5c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/DSNEforge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/DSNEforge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/AutoCopyChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/AutoCopyChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/RareDropNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/RareDropNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/DragonSpawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/DragonSpawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/PingPong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/PingPong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/Rat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/Rat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/DamageFormatting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/DamageFormatting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/PlayerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/PlayerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/RenderListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/RenderListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/EyesDropped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/EyesDropped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/FirstLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/FirstLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/InventoryUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/InventoryUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/JSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/NumberFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/NumberFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,15 +108,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nhgf1\OneDrive\Documents\GitHub\DSNEforge\run\config\DSNEforge" />
@@ -112,7 +125,7 @@
       <recent name="C:\Users\nhgf1\OneDrive\Documents\GitHub\DSNEforge\src\main\java\com\lilyth\modules\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.DSNEforge [build]">
     <configuration name="Minecraft Client" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="MAIN_CLASS_NAME" value="GradleStart" />

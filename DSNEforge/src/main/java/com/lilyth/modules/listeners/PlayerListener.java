@@ -55,7 +55,6 @@ public class PlayerListener {
     @SubscribeEvent
     public void onChatMessageRecieved(ClientChatReceivedEvent event){
         Minecraft mc = Minecraft.getMinecraft();
-        EntityPlayerSP p = mc.thePlayer;
         if(mc.thePlayer == null || mc.theWorld == null) return;
         if(!main.getUtils().isOnDragsim()) return;
         if(config.COPY_CHAT){

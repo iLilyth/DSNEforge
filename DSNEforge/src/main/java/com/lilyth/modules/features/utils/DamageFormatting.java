@@ -27,8 +27,8 @@ public class DamageFormatting {
                     e.setCanceled(true);
                     String name = entity.getName();
                     String star = "✰";
-                    for (int i = 0; i < target.length; i++) {
-                        name = name.replace(target[i], "");
+                    for (String s : target) {
+                        name = name.replace(s, "");
                     }
                     name = String.valueOf(main.getNumberFormatter().format(Integer.parseInt(name)));
                     name = star.concat(name).concat("✰");
