@@ -8,6 +8,7 @@ import net.minecraftforge.client.event.ClientChatReceivedEvent;
 public class CopyChat  {
     public void copyChat(ClientChatReceivedEvent e) {
         Minecraft mc = Minecraft.getMinecraft();
+        if (e.message.getChatStyle().getChatClickEvent() != null) return;
         ChatComponentText text = new ChatComponentText(e.message.getUnformattedText());
         if (e.message.getChatStyle().getChatClickEvent() != null) return;
         text.setChatStyle(e.message.getChatStyle());
