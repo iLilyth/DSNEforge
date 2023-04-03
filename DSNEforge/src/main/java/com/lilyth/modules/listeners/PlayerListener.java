@@ -19,7 +19,7 @@ public class PlayerListener {
     public boolean HasNotRecentlyJoinedWorld() {
         return Minecraft.getSystemTime() - this.lastWorldJoin > 5000L;
     }
-    public String list[] = {"Summoning Eye", "Ice Eye", "Cosmic Eye", "Radioactive Eye", "Flaming Eye", "Divine Eye"};
+    public String[] list = {"Summoning Eye", "Ice Eye", "Cosmic Eye", "Radioactive Eye", "Flaming Eye", "Divine Eye"};
     @SubscribeEvent
     public void onWorldJoin(EntityJoinWorldEvent e) {
         Entity entity = e.entity;
@@ -42,7 +42,12 @@ public class PlayerListener {
         EntityPlayerSP p = mc.thePlayer;
         if(mc.thePlayer == null || mc.theWorld == null) return;
         if (event.phase == TickEvent.Phase.START) {
-            main.getToggleSprint().autoSprint(event);
+            if(config.AUTOSPRINT){
+                main.getToggleSprint().autoSprint(event);
+            }
+            if(config.DRAGON_TIMER){
+                main.getDragonSpawn().dragonSpawnCountdown(event);
+            }
         }
         if(!main.getUtils().isOnDragsim() || !main.getPlayerListener().HasNotRecentlyJoinedWorld()) return;;
         if (event.phase == TickEvent.Phase.END) {

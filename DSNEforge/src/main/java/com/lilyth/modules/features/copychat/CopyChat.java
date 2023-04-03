@@ -9,6 +9,7 @@ public class CopyChat  {
     public void copyChat(ClientChatReceivedEvent e) {
         Minecraft mc = Minecraft.getMinecraft();
         ChatComponentText text = new ChatComponentText(e.message.getUnformattedText());
+        if (e.message.getChatStyle().getChatClickEvent() != null) return;
         text.setChatStyle(e.message.getChatStyle());
         text.getChatStyle().setChatClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, e.message.getUnformattedText()));
     }

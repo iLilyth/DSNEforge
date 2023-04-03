@@ -122,139 +122,141 @@ public class EyesDropped {
     public void addEye(ClientChatReceivedEvent e){
         Minecraft mc = Minecraft.getMinecraft();
         String text = e.message.getUnformattedText();
-        if(text.startsWith("RARE DROP! Summoning Eye")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/SummoningEyes.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/SummoningEyes.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+        if(!text.contains(":")){
+            if(text.contains("RARE DROP! Summoning Eye")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/SummoningEyes.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/SummoningEyes.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("RARE DROP! Ice Eye")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/IceEyes.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/IceEyes.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("RARE DROP! Ice Eye")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/IceEyes.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/IceEyes.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("RARE DROP! Cosmic Eye")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/CosmicEyes.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/CosmicEyes.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(Exception er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("RARE DROP! Cosmic Eye")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/CosmicEyes.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/CosmicEyes.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(Exception er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("CRAZY RARE DROP! Radioactive Eye")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/RadioactiveEyes.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/RadioactiveEyes.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("CRAZY RARE DROP! Radioactive Eye")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/RadioactiveEyes.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/RadioactiveEyes.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("RNGesus INCARNATE! Flaming Eye")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/FlamingEyes.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/FlamingEyes.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("RNGesus INCARNATE! Flaming Eye")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/FlamingEyes.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/FlamingEyes.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("RNGesus INCARNATE! Divine Eye")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/DivineEyes.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/DivineEyes.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("RNGesus INCARNATE! Divine Eye")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/DivineEyes.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/DivineEyes.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("INSANE DROP! Divine Ameliorate")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/DivineAmeliorate.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/DivineAmeliorate.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("INSANE DROP! Divine Ameliorate")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/DivineAmeliorate.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/DivineAmeliorate.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("* You placed a Summoning Eye!")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/EyesPlaced.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/EyesPlaced.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("* You placed a Summoning Eye!")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/EyesPlaced.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/EyesPlaced.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
-        }
-        if(text.startsWith("* You placed a Divine Eye!")){
-            try{
-                FileReader fileReader = new FileReader("./config/DSNEforge/DivinesPlaced.txt");
-                BufferedReader reader = new BufferedReader(fileReader);
-                String asd = reader.readLine();
-                reader.close();
-                FileWriter fileWriter = new FileWriter("./config/DSNEforge/DivinesPlaced.txt", false);
-                BufferedWriter writer = new BufferedWriter(fileWriter);
-                writer.write(String.valueOf(Integer.parseInt(asd) + 1));
-                writer.close();
-            }catch(IOException er){
-                System.out.println("An error has occured.");
-                mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+            if(text.contains("* You placed a Divine Eye!")){
+                try{
+                    FileReader fileReader = new FileReader("./config/DSNEforge/DivinesPlaced.txt");
+                    BufferedReader reader = new BufferedReader(fileReader);
+                    String asd = reader.readLine();
+                    reader.close();
+                    FileWriter fileWriter = new FileWriter("./config/DSNEforge/DivinesPlaced.txt", false);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.write(String.valueOf(Integer.parseInt(asd) + 1));
+                    writer.close();
+                }catch(IOException er){
+                    System.out.println("An error has occured.");
+                    mc.thePlayer.addChatMessage(new ChatComponentText("Shit broke gg"));
+                }
             }
         }
     }

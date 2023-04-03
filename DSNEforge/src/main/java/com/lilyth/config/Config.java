@@ -48,6 +48,15 @@ public class Config extends Vigilant {
     public boolean RARE_DROPS = true;
 
     @Property(
+            type = PropertyType.CHECKBOX,
+            name = "Dont notify \"Trash\" drops",
+            description = "Frozen scythe, livid dagger",
+            category = "!Features",
+            subcategory = "Rare Drops"
+    )
+    public boolean RARE_DROPS_1 = true;
+
+    @Property(
             type = PropertyType.SLIDER,
             name = "FPS counter Y",
             description = "",
@@ -204,9 +213,18 @@ public class Config extends Vigilant {
     )
     public boolean ENDERMAN_WAYPOINTS = true;
 
+
+    @Property(
+            type = PropertyType.CHECKBOX,
+            name = "Togglesprint",
+            description = "(you have to press sprint keybind for it to toggle)",
+            category = "!Features",
+            subcategory = "Togglesprint"
+    )
+    public boolean AUTOSPRINT = true;
     @Property(
             type = PropertyType.SLIDER,
-            name = "Autosprint X",
+            name = "Togglesprint X",
             description = "",
             category = "!Features",
             subcategory = "Togglesprint",
@@ -219,7 +237,7 @@ public class Config extends Vigilant {
 
     @Property(
             type = PropertyType.SLIDER,
-            name = "Autosprint Y",
+            name = "Togglesprint Y",
             description = "",
             category = "!Features",
             subcategory = "Togglesprint",
@@ -227,6 +245,40 @@ public class Config extends Vigilant {
             max = 100
     )
     public int AUTOSPRINT_Y = 5;
+
+    @Property(
+            type = PropertyType.CHECKBOX,
+            name = "Dragon Spawn Timer",
+            description = "",
+            category = "!Features",
+            subcategory = "Dragon Spawn Timer"
+    )
+    public boolean DRAGON_TIMER = true;
+    @Property(
+            type = PropertyType.SLIDER,
+            name = "Dragon Spawn Timer X",
+            description = "",
+            category = "!Features",
+            subcategory = "Dragon Spawn Timer",
+            min = 0,
+            max = 100
+    )
+    public int DRAGON_TIMER_X = 1;
+
+
+
+    @Property(
+            type = PropertyType.SLIDER,
+            name = "Dragon Spawn Timer Y",
+            description = "",
+            category = "!Features",
+            subcategory = "Dragon Spawn Timer",
+            min = 0,
+            max = 100
+    )
+    public int DRAGON_TIMER_Y = 5;
+
+
 
     public Config() {
         super(new File("./config/DSNEforge/DSNEconfig.toml"));

@@ -7,8 +7,6 @@ import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class ToggleSprint {
-
-    public static final DSNEforge main = DSNEforge.getInstance();
     public final Config config = DSNEforge.getConfig();
     public boolean isToggled = false;
     public int cooldown;

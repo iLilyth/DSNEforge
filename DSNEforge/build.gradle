@@ -23,7 +23,7 @@ buildscript {
 
 apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: "com.github.johnrengelman.shadow"
-version = "1.1.1"
+version = "1.1.2"
 group = "com.ililyth" //http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "dsneforge" //name of the output jar
 

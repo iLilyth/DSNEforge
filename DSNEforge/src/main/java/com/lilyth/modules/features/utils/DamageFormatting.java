@@ -30,7 +30,7 @@ public class DamageFormatting {
                     for (String s : target) {
                         name = name.replace(s, "");
                     }
-                    name = String.valueOf(main.getNumberFormatter().format(Integer.parseInt(name)));
+                    name = String.valueOf(main.getNumberFormatter().format(Long.parseLong(name)));
                     name = star.concat(name).concat("✰");
                     float x = entity.getPosition().getX();
                     float y = entity.getPosition().getY();
