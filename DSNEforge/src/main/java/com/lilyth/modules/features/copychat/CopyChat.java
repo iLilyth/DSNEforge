@@ -7,8 +7,11 @@ import net.minecraftforge.client.event.ClientChatReceivedEvent;
 
 public class CopyChat  {
     public void copyChat(ClientChatReceivedEvent e) {
+<<<<<<< Updated upstream
         Minecraft mc = Minecraft.getMinecraft();
         if (e.message.getChatStyle().getChatClickEvent() != null) return;
+=======
+>>>>>>> Stashed changes
         ChatComponentText text = new ChatComponentText(e.message.getUnformattedText());
         if (e.message.getChatStyle().getChatClickEvent() != null) return;
         text.setChatStyle(e.message.getChatStyle());
