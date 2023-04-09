@@ -14,6 +14,7 @@ import com.lilyth.modules.features.hud.FPScounter;
 import com.lilyth.modules.features.hud.PingCounter;
 import com.lilyth.modules.features.notifiers.DivineSuperior;
 import com.lilyth.modules.listeners.RenderListener;
+import com.lilyth.modules.mixins.MixinGuiIngameForge;
 import com.lilyth.modules.trackers.EyesDropped;
 import com.lilyth.modules.trackers.FirstLoad;
 import com.lilyth.modules.utils.InventoryUtils;
@@ -23,6 +24,7 @@ import com.lilyth.modules.utils.Utils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.*;
+import org.spongepowered.asm.mixin.Mixin;
 
 @Mod(
         modid = DSNEforge.MODID,

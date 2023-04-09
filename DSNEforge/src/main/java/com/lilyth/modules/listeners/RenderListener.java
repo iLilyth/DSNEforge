@@ -4,17 +4,15 @@ import com.lilyth.DSNEforge;
 import com.lilyth.config.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.ChatComponentText;
 import net.minecraftforge.client.event.GuiOpenEvent;
-import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderLivingEvent;
-import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class RenderListener {
     private static final DSNEforge main = DSNEforge.getInstance();
     private final Config config = DSNEforge.getConfig();
+    public boolean guiOpen;
     @SubscribeEvent
     public void onClientTick(TickEvent.RenderTickEvent event) {
         Minecraft mc = Minecraft.getMinecraft();
@@ -33,17 +31,12 @@ public class RenderListener {
                 if (config.EYE_DISPLAY) {
                     main.getEyesDropped().eyeDropGui(event);
                 }
-                if (main.getRareDropNotifier().timeout > 0) {
-                    main.getRareDropNotifier().timeoutCount();
-                }
                 if (config.DRAGON_TIMER) {
                     main.getDragonSpawn().dragonSpawnGUI(event);
                 }
             }
         }
     }
-
-    public boolean guiOpen;
     @SubscribeEvent
     public void onGuiOpened(GuiOpenEvent event){
         guiOpen = event.gui != null;
@@ -52,20 +45,21 @@ public class RenderListener {
     @SubscribeEvent
     public void renderEntity(RenderLivingEvent.Specials.Pre<EntityLivingBase> event) {
         Minecraft mc = Minecraft.getMinecraft();
-        if (mc.thePlayer == null || mc.theWorld == null || !main.getUtils().isOnDragsim() || !main.getPlayerListener().HasNotRecentlyJoinedWorld()) return;
-        if (config.DMG_FORMATTING) {
-            main.getDamageFormatting().damageFormatter(event);
-        }
-        if (config.RARE_DROPS) {
-            if(!config.RARE_DROPS_1){
-                main.getRareDropNotifier().rareDropNotifier1(event);
+        if (mc.thePlayer != null && mc.theWorld != null && main.getUtils().isOnDragsim() && main.getPlayerListener().HasNotRecentlyJoinedWorld()) {
+            if (config.DMG_FORMATTING) {
+                main.getDamageFormatting().damageFormatter(event);
             }
-            main.getRareDropNotifier().rareDropNotifier2(event);
-            main.getRareDropNotifier().rareDropNotifier3(event);
-            main.getRareDropNotifier().rareDropNotifier4(event);
-        }
-        if (config.ENDERMAN_WAYPOINTS) {
-            main.getEndermanWaypoints().endermanWaypoints(event);
+            if (config.RARE_DROPS) {
+                if(!config.RARE_DROPS_1){
+                    main.getRareDropNotifier().rareDropNotifier1(event);
+                }
+                main.getRareDropNotifier().rareDropNotifier2(event);
+                main.getRareDropNotifier().rareDropNotifier3(event);
+                main.getRareDropNotifier().rareDropNotifier4(event);
+            }
+            if (config.ENDERMAN_WAYPOINTS) {
+                main.getEndermanWaypoints().endermanWaypoints(event);
+            }
         }
     }
 }

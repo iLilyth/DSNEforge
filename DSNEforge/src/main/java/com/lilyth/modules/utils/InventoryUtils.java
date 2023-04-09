@@ -19,12 +19,11 @@ public class InventoryUtils {
             mc.ingameGUI.displayTitle(ChatColor.RED + "INVENTORY FULL!", "", 0, 65, 0);
             cooldown = 60;
         }
-
     }
     public static boolean hasOpenInventorySlots() {
         EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;
         IInventory inventory = player.inventory;
-        int armorSlots = 5; // the number of armor slots
+        int armorSlots = 5;
         int inventorySize = inventory.getSizeInventory();
         inventorySize = inventorySize - armorSlots;
         int emptySlots = 0;
@@ -36,5 +35,4 @@ public class InventoryUtils {
         }
         return emptySlots > 0;
     }
-
 }

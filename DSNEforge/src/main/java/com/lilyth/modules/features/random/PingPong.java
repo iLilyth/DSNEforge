@@ -9,7 +9,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class PingPong {
     private static final DSNEforge main = DSNEforge.getInstance();
-    @SubscribeEvent
     public void pingPong(ClientChatReceivedEvent event){
         Minecraft mc = Minecraft.getMinecraft();
         if(mc.theWorld==null || mc.thePlayer==null || !main.getUtils().isOnDragsim()) return;

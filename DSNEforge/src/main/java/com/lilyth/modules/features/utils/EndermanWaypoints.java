@@ -28,7 +28,7 @@ public class EndermanWaypoints {
             float viewerPitch = mc.thePlayer.rotationPitch;
             RenderManager renderManager = mc.getRenderManager();
             double distanceScale = 0.003;
-            double distance = Minecraft.getMinecraft().thePlayer.getDistance(x, y, z);
+            double distance = Minecraft.getMinecraft().thePlayer.getDistance((double)x, (double)y, (double)z);
             GlStateManager.pushMatrix();
             GlStateManager.translate(x - renderManager.viewerPosX, y - renderManager.viewerPosY + entity.height - 1.5D, z - renderManager.viewerPosZ);
             GlStateManager.rotate(-viewerYaw, 0.0F, 1.0F, 0.0F);

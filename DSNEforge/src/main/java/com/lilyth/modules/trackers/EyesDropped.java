@@ -271,8 +271,7 @@ public class EyesDropped {
         mc.fontRendererObj.drawStringWithShadow("Radioactive Eyes: " + eyeCount4(), (((float)mc.displayWidth / 200) * config.EYE_DISPLAY_X), (((float)mc.displayHeight / 200) * config.EYE_DISPLAY_Y) + 30, 0x55FF55);
         mc.fontRendererObj.drawStringWithShadow("Flaming Eyes: " + eyeCount5(), (((float)mc.displayWidth / 200) * config.EYE_DISPLAY_X), (((float)mc.displayHeight / 200) * config.EYE_DISPLAY_Y) + 40, 0xFF5555);
         mc.fontRendererObj.drawStringWithShadow("Divine Eyes: " + eyeCount6(), (((float)mc.displayWidth / 200) * config.EYE_DISPLAY_X), (((float)mc.displayHeight / 200) * config.EYE_DISPLAY_Y) + 50, 0x55FFFF);
-        mc.fontRendererObj.drawStringWithShadow("Divine Ameliorate: " + eyeCount7(), (((float)mc.displayWidth / 200) * config.EYE_DISPLAY_X), (((float)mc.displayHeight / 200) * config.EYE_DISPLAY_Y) + 60, 0x55FFFF);
+        mc.fontRendererObj.drawStringWithShadow("Divine Ameliorate: " + eyeCount7(), (((float)mc.displayWidth / 200) * config.EYE_DISPLAY_X), (((float)mc.displayHeight / 200) * config.EYE_DISPLAY_Y) + 60, 0xFFAA00);
 
     }
-
 }
