@@ -18,7 +18,7 @@ public class EndermanWaypoints {
     public void endermanWaypoints(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
-        if (entity instanceof EntityEnderman) {
+        if (entity instanceof EntityEnderman && !(((EntityEnderman) entity).getHealth() == 0)) {
             String name = "Z";
             float x = entity.getPosition().getX();
             float y = entity.getPosition().getY();
