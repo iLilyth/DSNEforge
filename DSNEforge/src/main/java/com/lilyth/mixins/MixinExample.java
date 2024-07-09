@@ -1,4 +1,5 @@
-package com.lilyth.modules.mixins;
+package com.lilyth.mixins;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiMerchant;
 import net.minecraft.util.ChatComponentText;

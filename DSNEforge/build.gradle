@@ -52,6 +52,8 @@ minecraft {
 
     makeObfSourceJar = false
 
+
+    //clientRunArgs += "--tweakClass gg.essential.loader.stage0.EssentialSetupTweaker"
     clientRunArgs += "--tweakClass org.spongepowered.asm.launch.MixinTweaker"
     clientRunArgs += "--mixin mixins.endsimextras.json"
 }

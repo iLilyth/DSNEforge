@@ -10,38 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0680044-cc56-415e-87a8-a8950c47ab5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/EndsimExtras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/DSNEforge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/copium/TimeSpent.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/commands/vigilance/ExampleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/commands/vigilance/ExampleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/RAT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/AutoCopyChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/AutoCopyChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/CopyChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/CopyChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/FPScounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/FPScounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/PingCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/PingCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/ToggleSprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/ToggleSprint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/DivineSuperior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/DivineSuperior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/RareDropNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/RareDropNotifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/DragonSpawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/DragonSpawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/PingPong.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/Rat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/DamageFormatting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/DamageFormatting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/EndermanWaypoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/EndermanWaypoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/PlayerListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/RenderListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/mixins/MixinGuiIngameForge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/EyesDropped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/EyesDropped.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/FirstLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/FirstLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/NumberFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/NumberFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.dsne.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.endsimextras.json" afterDir="false" />
-    </list>
+    <list default="true" id="d0680044-cc56-415e-87a8-a8950c47ab5c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,24 +69,28 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2NTYuiYuUAbkjjz2pZmD6ceIbmJ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nhgf1/OneDrive/Documents/GitHub/DSNEforge/DSNEforge/DSNEforge/build.gradle",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/nhgf1/OneDrive/Documents/GitHub/EndsimExtras",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15332031",
-    "project.structure.side.proportion": "0.23094688",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+    "project.structure.side.proportion": "0.2773261",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -394,6 +367,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -415,6 +393,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DSNEforge$Minecraft_Client.ic" NAME="Minecraft Client Coverage Results" MODIFIED="1679783521708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

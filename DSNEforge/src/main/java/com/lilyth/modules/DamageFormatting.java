@@ -1,8 +1,8 @@
-package com.lilyth.modules.features.utils;
+package com.lilyth.modules;
 
 import com.lilyth.EndsimExtras;
 import com.lilyth.config.Config;
-import com.lilyth.modules.utils.NumberFormatter;
+import com.lilyth.utils.NumberFormatter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -26,7 +26,7 @@ public class DamageFormatting {
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if (entity.hasCustomName()) {
-            if(mc.thePlayer.canEntityBeSeen(entity)){
+            if (mc.thePlayer.canEntityBeSeen(entity)) {
                 if (entity.getName().contains("✰")) {
                     e.setCanceled(true);
                     String name = entity.getName();

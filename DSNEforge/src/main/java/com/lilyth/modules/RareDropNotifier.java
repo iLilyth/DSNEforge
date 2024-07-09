@@ -1,7 +1,8 @@
-package com.lilyth.modules.features.notifiers;
+package com.lilyth.modules;
 
 import com.lilyth.EndsimExtras;
 import com.lilyth.config.Config;
+import com.lilyth.utils.Utils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -19,12 +20,13 @@ public class RareDropNotifier {
     public boolean dragonDownlol2;
     public boolean dragonDownlol3;
     public boolean dragonDownlol4;
+
     @SubscribeEvent
     public void rareDropNotifier2(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
-        if(!config.RARE_DROPS) return;
+        if (!config.RARE_DROPS || !Utils.isOnEndsim()) return;
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
-        if(dragonDownlol2 && entity.hasCustomName() && entity.getName().contains("§k")){
+        if (dragonDownlol2 && entity.hasCustomName() && entity.getName().contains("§k")) {
             for (int i = 0; i < target2.length; i++) {
                 if (entity.getName().contains(target2[i])) {
                     mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
@@ -36,12 +38,13 @@ public class RareDropNotifier {
             }
         }
     }
+
     @SubscribeEvent
     public void rareDropNotifier3(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
-        if(!config.RARE_DROPS) return;
+        if (!config.RARE_DROPS || !Utils.isOnEndsim()) return;
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
-        if(dragonDownlol2 && entity.hasCustomName() && entity.getName().contains("§k")){
+        if (dragonDownlol2 && entity.hasCustomName() && entity.getName().contains("§k")) {
             for (int i = 0; i < target3.length; i++) {
                 if (entity.getName().contains(target3[i])) {
                     mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
@@ -53,12 +56,13 @@ public class RareDropNotifier {
             }
         }
     }
+
     @SubscribeEvent
     public void rareDropNotifier4(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
-        if(!config.RARE_DROPS) return;
+        if (!config.RARE_DROPS || !Utils.isOnEndsim()) return;
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
-        if(dragonDownlol2 && entity.hasCustomName() && entity.getName().contains("§k")){
+        if (dragonDownlol2 && entity.hasCustomName() && entity.getName().contains("§k")) {
             for (int i = 0; i < target4.length; i++) {
                 if (entity.getName().contains(target4[i])) {
                     mc.ingameGUI.displayTitle(entity.getName(), "", 0, 100, 0);
@@ -70,21 +74,23 @@ public class RareDropNotifier {
             }
         }
     }
+
     @SubscribeEvent
     public void dragonDown(ClientChatReceivedEvent event) {
-        if(!config.RARE_DROPS) return;
+        if (!config.RARE_DROPS || !Utils.isOnEndsim()) return;
         String msg = event.message.getUnformattedText();
-        if(msg.startsWith("Dragon down!")){
+        if (msg.startsWith("Dragon down!")) {
             dragonDownlol2 = true;
             dragonDownlol3 = true;
             dragonDownlol4 = true;
         }
     }
+
     @SubscribeEvent
     public void dragonEggSpawn(ClientChatReceivedEvent event) {
-        if(!config.RARE_DROPS) return;
+        if (!config.RARE_DROPS || !Utils.isOnEndsim()) return;
         String msg = event.message.getUnformattedText();
-        if(msg.startsWith("* The Dragon Egg has spawned!")){
+        if (msg.startsWith("* The Dragon Egg has spawned!")) {
             dragonDownlol2 = false;
             dragonDownlol3 = false;
             dragonDownlol4 = false;
