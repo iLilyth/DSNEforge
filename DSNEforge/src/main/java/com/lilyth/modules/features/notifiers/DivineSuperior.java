@@ -1,22 +1,23 @@
 package com.lilyth.modules.features.notifiers;
 
-import com.lilyth.DSNEforge;
+import com.lilyth.EndsimExtras;
 import com.lilyth.config.Config;
+import com.lilyth.modules.utils.Utils;
 import gg.essential.universal.ChatColor;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class DivineSuperior {
-    private static final DSNEforge main = DSNEforge.getInstance();
+    public final Config config = EndsimExtras.config;
+    @SubscribeEvent
     public void divineSuperior(ClientChatReceivedEvent event) {
-        Minecraft mc = Minecraft.getMinecraft();
+        if(!config.DRAGON_NOTIFIER) return;
         if (event.message.getUnformattedText().startsWith("* The SUPERIOR Dragon has spawned!")) {
-            ChatColor chatColor = ChatColor.GOLD;
-            String text = "SUPERIOR!";
-            main.getUtils().showTitle(chatColor, text);
+            Utils.showTitle(ChatColor.GOLD, "SUPERIOR!", 40);
         }
         if (event.message.getUnformattedText().contains("* The DIVINE Dragon has spawned!")) {
-            main.getUtils().showTitle(ChatColor.AQUA, "DIVINE!");
+            Utils.showTitle(ChatColor.AQUA, "DIVINE!", 60);
         }
     }
 }

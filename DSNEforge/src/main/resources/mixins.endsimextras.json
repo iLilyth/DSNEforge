@@ -4,8 +4,7 @@
   "package": "com.lilyth.modules.mixins",
   "compatibilityLevel": "JAVA_8",
   "client": [
-    "MixinExample",
-    "MixinGuiIngameForge"
+    "MixinExample"
   ],
   "injectors": {
     "defaultRequire": 1

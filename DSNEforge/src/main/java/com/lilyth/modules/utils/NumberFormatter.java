@@ -1,8 +1,5 @@
 package com.lilyth.modules.utils;
 
-import com.lilyth.DSNEforge;
-import com.lilyth.config.Config;
-
 import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
@@ -18,7 +15,7 @@ public class NumberFormatter {
         suffixes.put(1_000_000_000_000_000_000L, "Qi");
     }
 
-    public String format(long value) {
+    public static String format(long value) {
         if (value == Long.MIN_VALUE) return format(Long.MIN_VALUE + 1);
         if (value < 0) return "-" + format(-value);
         if (value < 1000) return Long.toString(value);

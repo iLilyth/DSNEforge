@@ -1,5 +1,7 @@
 package com.lilyth.modules.features.utils;
 
+import com.lilyth.EndsimExtras;
+import com.lilyth.config.Config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -12,10 +14,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.opengl.GL11;
 
 public class EndermanWaypoints {
+    public final Config config = EndsimExtras.config;
+    @SubscribeEvent
     public void endermanWaypoints(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
+        if(!config.ENDERMAN_WAYPOINTS) return;
         Minecraft mc = Minecraft.getMinecraft();
         Entity entity = e.entity;
         if (entity instanceof EntityEnderman) {

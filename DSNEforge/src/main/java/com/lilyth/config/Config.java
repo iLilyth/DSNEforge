@@ -29,14 +29,14 @@ public class Config extends Vigilant {
     )
     public int FPS_COUNTER_X = 1;
 
-    @Property(
+   /* @Property(
             type = PropertyType.CHECKBOX,
             name = "Damage Formatting",
             description = "",
             category = "!Visual",
             subcategory = "Checkboxes"
     )
-    public boolean DMG_FORMATTING = true;
+    public boolean DMG_FORMATTING = true; */
 
     @Property(
             type = PropertyType.CHECKBOX,
@@ -46,15 +46,6 @@ public class Config extends Vigilant {
             subcategory = "Rare Drops"
     )
     public boolean RARE_DROPS = true;
-
-    @Property(
-            type = PropertyType.CHECKBOX,
-            name = "Dont notify \"Trash\" drops",
-            description = "Frozen scythe, livid dagger",
-            category = "!Features",
-            subcategory = "Rare Drops"
-    )
-    public boolean RARE_DROPS_1 = true;
 
     @Property(
             type = PropertyType.SLIDER,
@@ -149,19 +140,19 @@ public class Config extends Vigilant {
     )
     public boolean COPY_CHAT = true;
 
-    @Property(
+    /*@Property(
             type = PropertyType.CHECKBOX,
             name = "Inventory Full Notifier",
             description = "Notifies you when your inventory is full",
             category = "!Features",
             subcategory = "Notifiers"
     )
-    public boolean INV_FULL_NOTIFIER = true;
+    public boolean INV_FULL_NOTIFIER = true;*/
 
     @Property(
             type = PropertyType.CHECKBOX,
             name = "Dragon Notifier",
-            description = "Notifies on dragon spawn",
+            description = "Notifies on rare dragon spawn",
             category = "!Features",
             subcategory = "Notifiers"
     )
@@ -195,14 +186,14 @@ public class Config extends Vigilant {
     )
     public int AUTO_COPY_CHAT_FILTER = 1;
 
-    @Property(
+    /*@Property(
             type = PropertyType.CHECKBOX,
             name = "Fullbright",
             description = "",
             category = "!Visual",
             subcategory = "misc"
     )
-    public boolean FULLBRIGHT = true;
+    public boolean FULLBRIGHT = true;*/
 
     @Property(
             type = PropertyType.CHECKBOX,
@@ -281,7 +272,7 @@ public class Config extends Vigilant {
 
 
     public Config() {
-        super(new File("./config/DSNEforge/DSNEconfig.toml"));
+        super(new File("./config/EndsimExtras/EndsimExtrasconfig.toml"));
         initialize();
     }
 }

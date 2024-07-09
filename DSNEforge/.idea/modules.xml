@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DSNEforge.api.iml" filepath="$PROJECT_DIR$/.idea/modules/DSNEforge.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DSNEforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DSNEforge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DSNEforge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/DSNEforge.test.iml" />
     </modules>
   </component>
 </project>

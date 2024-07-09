@@ -1,6 +1,8 @@
 package com.lilyth.modules.features.utils;
 
-import com.lilyth.DSNEforge;
+import com.lilyth.EndsimExtras;
+import com.lilyth.config.Config;
+import com.lilyth.modules.utils.NumberFormatter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -15,8 +17,10 @@ import net.minecraftforge.client.event.RenderLivingEvent;
 import org.lwjgl.opengl.GL11;
 
 public class DamageFormatting {
-    private static final DSNEforge main = DSNEforge.getInstance();
+
+    public final Config config = EndsimExtras.config;
     String[] target = {"✰", "§0", "§1", "§2", "§3", "§4", "§5", "§6", "§7", "§8", "§9", "§a", "§b", "§c", "§d", "§e", "§f"};
+
 
     public void damageFormatter(RenderLivingEvent.Specials.Pre<EntityLivingBase> e) {
         Minecraft mc = Minecraft.getMinecraft();
@@ -30,7 +34,7 @@ public class DamageFormatting {
                     for (String s : target) {
                         name = name.replace(s, "");
                     }
-                    name = String.valueOf(main.getNumberFormatter().format(Long.parseLong(name)));
+                    name = String.valueOf(NumberFormatter.format(Long.parseLong(name)));
                     name = star.concat(name).concat("✰");
                     float x = entity.getPosition().getX();
                     float y = entity.getPosition().getY();

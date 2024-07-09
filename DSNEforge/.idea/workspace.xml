@@ -11,11 +11,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0680044-cc56-415e-87a8-a8950c47ab5c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/EndsimExtras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/DSNEforge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/copium/TimeSpent.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/commands/vigilance/ExampleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/commands/vigilance/ExampleCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/RAT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/AutoCopyChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/AutoCopyChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/CopyChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/copychat/CopyChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/FPScounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/FPScounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/PingCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/PingCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/ToggleSprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/hud/ToggleSprint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/DivineSuperior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/DivineSuperior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/RareDropNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/notifiers/RareDropNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/DragonSpawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/DragonSpawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/PingPong.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/random/Rat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/DamageFormatting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/DamageFormatting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/EndermanWaypoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/features/utils/EndermanWaypoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/PlayerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/listeners/RenderListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/mixins/MixinGuiIngameForge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/EyesDropped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/EyesDropped.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/FirstLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/trackers/FirstLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/NumberFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/NumberFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lilyth/modules/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.dsne.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.endsimextras.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +76,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="forgegradle" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="DSNEforge" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -77,24 +97,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2NTYuiYuUAbkjjz2pZmD6ceIbmJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nhgf1/OneDrive/Documents/GitHub/LilythClient/LilythClient&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/nhgf1/OneDrive/Documents/GitHub/DSNEforge/DSNEforge/DSNEforge/build.gradle",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15332031",
+    "project.structure.side.proportion": "0.23094688",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nhgf1\OneDrive\Documents\GitHub\DSNEforge\run\config\DSNEforge" />
@@ -107,7 +132,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="MAIN_CLASS_NAME" value="GradleStart" />
       <module name="DSNEforge.main" />
-      <option name="PROGRAM_PARAMETERS" value="--tweakClass gg.essential.loader.stage0.EssentialSetupTweaker --mixin mixins.dsne.json" />
+      <option name="PROGRAM_PARAMETERS" value="--tweakClass gg.essential.loader.stage0.EssentialSetupTweaker --mixin mixins.endsimextras.json" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -135,6 +160,21 @@
       <option name="MAIN_CLASS_NAME" value="GradleStart" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../DSNEforge\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DSNEforge.main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="--tweakClass org.spongepowered.asm.launch.MixinTweaker --mixin mixins.dsne.json" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../DSNEforge\run" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -185,6 +225,21 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../DSNEforge\run" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DSNEforge.main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
     <configuration name="DSNEforge [build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,6 +259,73 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="DSNEforge [cleanCache]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanCache" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="DSNEforge [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="DSNEforge [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="genIntellijRuns" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="DSNEforge [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -225,17 +347,24 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Minecraft Client" />
       <item itemvalue="Application.Minecraft Server" />
       <item itemvalue="Gradle.DSNEforge [build]" />
+      <item itemvalue="Gradle.DSNEforge [genIntellijRuns]" />
+      <item itemvalue="Gradle.DSNEforge [clean]" />
+      <item itemvalue="Gradle.DSNEforge [cleanCache]" />
       <item itemvalue="Gradle.DSNEforge [setupDecompWorkspace]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DSNEforge [genIntellijRuns]" />
+        <item itemvalue="Gradle.DSNEforge [clean]" />
         <item itemvalue="Gradle.DSNEforge [setupDecompWorkspace]" />
+        <item itemvalue="Gradle.DSNEforge [cleanCache]" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +380,7 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.spongepowered:mixin" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

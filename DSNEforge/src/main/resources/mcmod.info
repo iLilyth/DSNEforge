@@ -1,9 +1,9 @@
 [
 {
-  "modid": "dsne",
-  "name": "DSNEforge",
-  "description": "Utility mod for Dragsim.net",
-  "version": "1.4",
+  "modid": "endsimextras",
+  "name": "Endsim-Extras",
+  "description": "Utility mod for Endsim.net",
+  "version": "2.0",
   "mcversion": "1.8.9",
   "url": "",
   "updateUrl": "",

@@ -1,5 +1,0 @@
-I have spent:
-5 hours getting gradle to function
-3 hours getting vigilance to work
-2 hours to understand how to draw things on screen
-4 hours until i realized that putting final in a config import nuked my game
